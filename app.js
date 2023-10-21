@@ -66,3 +66,16 @@ do {
     console.log(`${f} ${output}`);
     f++;
 } while (f <= 100);
+
+let numberFinder = Math.round((Math.random() * 500)); 
+let n = Math.round(Math.random() * (500 - 100) + 100); 
+
+for (let g = 1; g <= n; g++) {
+    if (g == numberFinder) {
+        console.log(`Found ${numberFinder}!`);
+        break;
+    }
+    if (g == n){
+        console.log(`Did not find ${numberFinder} within 1-${n}!`);
+    }
+}
