@@ -23,7 +23,7 @@ do {
         console.log(c);
     }
     c++;
-} while (x < 100);
+} while (c < 100);
 
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
@@ -82,16 +82,16 @@ for (let g = 1; g <= n; g++) {
 
 let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
 let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
-let x = Math.round(Math.random() * (1000 - 1) + 1);
+let m = Math.round(Math.random() * (1000 - 1) + 1);
 let start = Math.round(Math.random() * (10 - 1) + 1);
 
-for (let x = start; x <= endl; x++) {
+for (let z = start; z <= m; z++) {
     let output = "";
-    if (x % fizzDivisor == 0) {
+    if (z % fizzDivisor == 0) {
         output += "FIZZ";
     }
-    if (x % buzzDivisor == 0) {
+    if (z % buzzDivisor == 0) {
         output += "BUZZ";
     }
-    console.log(`${x} ${output}`);
+    console.log(`${z} ${output}`);
 }
