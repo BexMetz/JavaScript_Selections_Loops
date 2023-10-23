@@ -82,16 +82,16 @@ for (let g = 1; g <= n; g++) {
 
 let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
 let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
-let n = Math.round(Math.random() * (1000 - 1) + 1);
+let x = Math.round(Math.random() * (1000 - 1) + 1);
 let start = Math.round(Math.random() * (10 - 1) + 1);
 
-for (let i = start; i <= endl; i++) {
+for (let x = start; x <= endl; x++) {
     let output = "";
-    if (i % fizzDivisor == 0) {
+    if (x % fizzDivisor == 0) {
         output += "FIZZ";
     }
-    if (i % buzzDivisor == 0) {
+    if (x % buzzDivisor == 0) {
         output += "BUZZ";
     }
-    console.log(`${i} ${output}`);
+    console.log(`${x} ${output}`);
 }
